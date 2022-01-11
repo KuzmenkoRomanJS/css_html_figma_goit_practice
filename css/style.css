@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --theme-accent: #ffc700;
+  --theme-main: #ffffff;
+  --theme-background: #222527;
+  --theme-background-popup: rgb(239 236 236 / 90%);
+  --theme-btn-text: #060803;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body svg {
+  fill: var(--theme-accent);
+}
+
+body button {
+  color: var(--theme-btn-text);
+}
+
+/* 1 section */
+.about {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/space.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.death_star_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -96px;
+  margin: auto;
+  opacity: 0.4;
+}
+
+.darth_vader_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.about header {
+  padding: 32px 0 72px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about h1 {
+  color: var(--theme-accent);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+
+.about h2 {
+  color: var(--theme-main);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.about li {
+  color: var(--theme-accent);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  list-style: disc;
+  margin-left: 18px;
+}
+.about li > span {
+  color: var(--theme-main);
+}
+
+.about_social_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 36%;
+}
+
+.about_social_media a {
+  margin-bottom: 26px;
+}
+
+.call-form-btn {
+  border: 0;
+  outline: 0;
+  padding: 16px 32px;
+  background: var(--theme-accent);
+  border-radius: 38px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.about_content_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+/* 2 section */
+.achivments {
+  padding: 60px 0;
+  background-color: var(--theme-background);
+}
+
+.achivments h3 {
+  margin-bottom: 64px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+}
+
+.achivments_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.achivments_item {
+  width: 25%;
+}
+
+.achivments_item_icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 32px;
+}
+
+.achivments_item h3 {
+  margin-bottom: 4px;
+}
+
+.achivments_item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+/* 3 section */
+.codex {
+  padding: 186px 0;
+  background-image: url("../img/space.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.codex .container {
+  flex-direction: row;
+}
+
+.codex_left_side,
+.codex_right_side {
+  width: 50%;
+}
+
+.codex_left_side h4 {
+  width: 573px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  color: var(--theme-accent);
+}
+
+.codex_right_side h4 {
+  color: var(--theme-accent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.codex_right_side p,
+.codex_right_side h5 {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+.codex_right_side p {
+  margin-bottom: 4px;
+}
+
+.codex_right_side h5 {
+  width: 573px;
+  margin-top: 60px;
+}
+
+/* Footer */
+.footer {
+  padding: 60px 0;
+  background-color: var(--theme-background);
+}
+
+.footer .container {
+  align-items: center;
+}
+
+.footer h5 {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-main);
+  width: 740px;
+  margin-bottom: 40px;
+}
+
+/* Model window */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-background-popup);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-form {
+  padding: 40px 80px;
+  background-color: var(--theme-background);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.close-icon svg {
+  fill: var(--theme-main);
+}
+
+.modal-form h4 {
+  color: var(--theme-accent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.modal-container p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-main);
+  margin-bottom: 32px;
+}
+
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.modal-form-label {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  margin-bottom: 4px;
+}
+
+.modal-form-input {
+  width: 440px;
+  height: 40px;
+  border: 1px solid var(--theme-main);
+  outline: none;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.modal-form-submit {
+  border: 0;
+  outline: 0;
+  padding: 16px 32px 16px 32px;
+  background: var(--theme-accent);
+  border-radius: 38px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-success {
+  width: 600px;
+  padding: 80px 40px 88px 40px;
+  background-color: var(--theme-background);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-container1 h4 {
+  color: var(--theme-accent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 112px;
+  text-align: center;
+}
+
+.modal-container1 p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--theme-main);
+}
+
+.model-success-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.about--light,
+.codex--light {
+  background-image: url("../img/stardust.jpg");
+}
