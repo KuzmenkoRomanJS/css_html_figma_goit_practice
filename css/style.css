@@ -2,10 +2,11 @@
 
 :root {
   --theme-accent: #ffc700;
-  --theme-main: #ffffff;
+  --theme-main: #fff;
   --theme-background: #222527;
   --theme-background-popup: rgb(239 236 236 / 90%);
   --theme-btn-text: #060803;
+  --theme-motto-text: #fff;
 }
 
 body,
@@ -16,6 +17,10 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.body-fixed {
+  overflow: hidden;
 }
 
 body svg {
@@ -136,7 +141,7 @@ body button {
   width: 100%;
   font-size: 16px;
   line-height: 24px;
-  color: var(--theme-main);
+  color: var(--theme-motto-text);
 }
 
 /* 2 section */
