@@ -11,15 +11,20 @@ function closeModals(e) {
     e.preventDefault();
 
     modalForm.classList.remove(MODAL_ACTIVE_CLASS);
-    modalSuccess.classList.remove(MODAL_ACTIVE_CLASS);
+  modalSuccess.classList.remove(MODAL_ACTIVE_CLASS);
+  
+  document.body.classList.remove('body-fixed')
 }
 
 function openSuccessModal() {
     modalForm.classList.remove(MODAL_ACTIVE_CLASS);
-    modalSuccess.classList.add(MODAL_ACTIVE_CLASS);
+  modalSuccess.classList.add(MODAL_ACTIVE_CLASS);
+  
+  document.body.classList.add('body-fixed')
 
     const modalFormClose = document.querySelector('#modal-success-close');
-    modalFormClose.addEventListener('click', closeModals);
+  modalFormClose.addEventListener('click', closeModals);
+  
 };
 
 
@@ -39,7 +44,9 @@ callFormBtn.addEventListener('click', function () {
     modalForm.classList.add(MODAL_ACTIVE_CLASS);
 
     const modalFormClose = document.querySelector('#modal-form-close');
-    modalFormClose.addEventListener('click', closeModals);
+  modalFormClose.addEventListener('click', closeModals);
+  
+  document.body.classList.add('body-fixed')
 
     form.addEventListener('submit', sendUserInfo);
 });
