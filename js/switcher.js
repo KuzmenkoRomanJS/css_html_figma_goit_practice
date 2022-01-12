@@ -4,7 +4,7 @@ const darkTheme = {
     bgd: '#222527',
     modalBgd: 'rgb(239 236 236 / 90%)',
     btnText: '#060803',
-    mottoText: '#fffff1'
+    mottoText: '#fff'
 };
 
 const lightTheme = {
